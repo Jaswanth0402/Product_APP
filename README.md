@@ -180,5 +180,8 @@ lib/
 
 ---
 
-Important:
-I Do only for Android Because i don't have Device to handle IOS
+## Platform Support
+
+This assessment has been developed and tested on Android devices.
+
+iOS-specific testing and validation could not be performed due to the unavailability of an iOS device and testing environment during the assessment period.
