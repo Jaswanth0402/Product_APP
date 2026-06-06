@@ -20,8 +20,8 @@ A production-quality Flutter application for managing products with clean archit
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/gnxtace-product-app.git
-cd gnxtace-product-app
+git clone https://github.com/Jaswanth0402/Product_APP.git
+cd Product_APP
 
 # 2. Install dependencies
 flutter pub get
@@ -180,3 +180,5 @@ lib/
 
 ---
 
+Important:
+I Do only for Android Because i don't have Device to handle IOS
