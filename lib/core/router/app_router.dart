@@ -43,15 +43,15 @@ GoRouter appRouter(Ref ref) {
             name: AppRoutes.addProductName,
             builder: (context, state) => const ProductFormScreen(),
           ),
+          GoRoute(
+            path: AppRoutes.editProduct,
+            name: AppRoutes.editProductName,
+            builder: (context, state) {
+              final product = state.extra! as ProductEntity;
+              return ProductFormScreen(existingProduct: product);
+            },
+          ),
         ],
-      ),
-      GoRoute(
-        path: AppRoutes.editProduct,
-        name: AppRoutes.editProductName,
-        builder: (context, state) {
-          final product = state.extra! as ProductEntity;
-          return ProductFormScreen(existingProduct: product);
-        },
       ),
     ],
   );
@@ -70,7 +70,7 @@ abstract final class AppRoutes {
   static const addProduct = '/products/add-product';
   static const addProductName = 'add-product';
 
-  static const editProduct = '/edit-product';
+  static const editProduct = '/products/edit-product';
   static const editProductName = 'edit-product';
 
   static const settings = '/products/settings';
