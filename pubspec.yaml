@@ -1,5 +1,5 @@
 name: product_app
-description: "A new Flutter project."
+description: "Product Management App — Gnxtace Flutter Assessment."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -30,6 +30,32 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+ 
+  # Networking
+  dio: ^5.7.0
+ 
+  # Local Storage
+  hive_flutter: ^1.1.0
+ 
+  # Connectivity
+  connectivity_plus: ^6.0.5
+ 
+  # Image
+  cached_network_image: ^3.4.1
+ 
+  # Navigation
+  go_router: ^14.3.0
+ 
+  # UI
+  carousel_slider: ^5.0.0
+  shimmer: ^3.0.0
+  infinite_scroll_pagination: ^4.0.0
+  flutter_smart_debouncer: ^1.0.1
+ 
+  # Serialization
+  json_annotation: ^4.9.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -38,6 +64,16 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+ 
+  # Code Generation
+  build_runner: ^2.4.12
+  json_serializable: ^6.8.0
+  riverpod_generator: ^2.4.3
+  custom_lint: ^0.6.7
+  riverpod_lint: ^2.3.13
+ 
+  # Testing
+  mocktail: ^1.0.4
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
